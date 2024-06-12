@@ -1,0 +1,44 @@
+@use './reset';
+@use './grid';
+
+$backgroundColor: #262525;
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #0f1b4c;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.background {
+  background-color: $backgroundColor;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.background::after {
+  content: '';
+  position: absolute;
+  top: -35px;
+  left: -42px;
+  width: 118px;
+  height: 102px;
+  background: #00717f;
+  filter: blur(70px);
+}
