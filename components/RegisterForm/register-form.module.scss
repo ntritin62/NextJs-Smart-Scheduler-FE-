@@ -1,4 +1,4 @@
-.login__form {
+.register__form {
   margin-top: 20px;
   display: flex;
   gap: 20px;
@@ -14,19 +14,22 @@
     text-align: center;
     border: solid 1px #9c2b2e;
   }
+  .register__input__block:nth-child(5) {
+    margin-top: 15px;
+  }
 
-  .login__input__block {
+  .register__input__block {
     display: flex;
     flex-direction: column;
     gap: 10px;
     position: relative;
 
-    .login__label {
+    .register__label {
       font-size: 1.5rem;
       font-weight: 400;
     }
 
-    .login__input {
+    .register__input {
       height: 50px;
       border-radius: 7px;
       overflow: hidden;
@@ -64,7 +67,7 @@
     }
   }
 
-  .login__btn {
+  .register__btn {
     margin-top: 40px;
     background: #00717f;
     font-size: 1.5rem;
