@@ -1,0 +1,86 @@
+@import '../../src/app/variables';
+
+.form {
+  margin-top: 50px;
+  width: 273px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  .input__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    label {
+      font-weight: 500;
+      font-size: 18px;
+    }
+
+    .select__container {
+      position: relative;
+      display: inline-block;
+      select {
+        appearance: none; /* Remove default dropdown arrow */
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        padding-right: 30px; /* Space for the custom icon */
+      }
+      i {
+        color: #929292;
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        pointer-events: none;
+      }
+    }
+
+    input,
+    select {
+      background: transparent;
+      border: solid 1px $primaryColor-200;
+      color: #fff;
+      border-radius: 8px;
+      color: #929292;
+      font-size: 1.4rem;
+
+      &::placeholder {
+        color: #929292;
+        font-size: 12px;
+        font-weight: 400;
+      }
+    }
+    select {
+      padding: 10px 20px;
+    }
+
+    &:first-child,
+    &:nth-child(5) {
+      border: solid 1px $primaryColor-200;
+      position: relative;
+      width: 217px;
+      padding: 15px;
+      border-radius: 8px;
+      input {
+        border: none;
+      }
+      label {
+        position: absolute;
+        top: -10px;
+        padding: 0 3px;
+        background: $backgroundColor;
+      }
+    }
+  }
+  button {
+    width: 100%;
+    background: inherit;
+    border: solid 1px $primaryColor-200;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.6rem;
+    padding: 10px 0;
+    border-radius: 8px;
+  }
+}
