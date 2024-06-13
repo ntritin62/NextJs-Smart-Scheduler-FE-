@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import styles from './register-page.module.scss';
 import RegisterForm from '../../../../components/RegisterForm';

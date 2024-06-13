@@ -16,9 +16,52 @@ const AiGenerateForm = () => {
       <div className={styles.input__block}>
         <label htmlFor="time">Estimate time</label>
         <div className={styles.select__container}>
-          <select name="repeat" id="repeat">
-            <option value="">30 minutes</option>
-          </select>
+          <div className={styles.selected}>
+            <div
+              style={{
+                background: '#4ADE80',
+                width: '4px',
+                height: '4px',
+                borderRadius: '1px',
+              }}
+            ></div>
+            <p>Health</p>
+          </div>
+          <ul className={styles.dropdown}>
+            <li className={styles.dropdown__item}>
+              <div
+                style={{
+                  background: '#4ADE80',
+                  width: '4px',
+                  height: '4px',
+                  borderRadius: '1px',
+                }}
+              ></div>
+              <p>Health</p>
+            </li>
+            <li className={styles.dropdown__item}>
+              <div
+                style={{
+                  background: '#4ADE80',
+                  width: '4px',
+                  height: '4px',
+                  borderRadius: '1px',
+                }}
+              ></div>
+              <p>Health</p>
+            </li>
+            <li className={styles.dropdown__item}>
+              <div
+                style={{
+                  background: '#4ADE80',
+                  width: '4px',
+                  height: '4px',
+                  borderRadius: '1px',
+                }}
+              ></div>
+              <p>Health</p>
+            </li>
+          </ul>
           <i>
             <FaChevronDown />
           </i>
@@ -27,20 +70,52 @@ const AiGenerateForm = () => {
       <div className={styles.input__block}>
         <label htmlFor="calendar">Calendar</label>
         <div className={styles.select__container}>
-          <div
-            style={{
-              background: '#4ADE80',
-              position: 'absolute',
-              top: '45%',
-              left: '10px',
-              width: '4px',
-              height: '4px',
-              borderRadius: '1px',
-            }}
-          ></div>
-          <select name="repeat" id="repeat">
-            <option value="">Health</option>
-          </select>
+          <div className={styles.selected}>
+            <div
+              style={{
+                background: '#4ADE80',
+                width: '4px',
+                height: '4px',
+                borderRadius: '1px',
+              }}
+            ></div>
+            <p>Health</p>
+          </div>
+          <ul className={styles.dropdown}>
+            <li className={styles.dropdown__item}>
+              <div
+                style={{
+                  background: '#4ADE80',
+                  width: '4px',
+                  height: '4px',
+                  borderRadius: '1px',
+                }}
+              ></div>
+              <p>Health</p>
+            </li>
+            <li className={styles.dropdown__item}>
+              <div
+                style={{
+                  background: '#4ADE80',
+                  width: '4px',
+                  height: '4px',
+                  borderRadius: '1px',
+                }}
+              ></div>
+              <p>Health</p>
+            </li>
+            <li className={styles.dropdown__item}>
+              <div
+                style={{
+                  background: '#4ADE80',
+                  width: '4px',
+                  height: '4px',
+                  borderRadius: '1px',
+                }}
+              ></div>
+              <p>Health</p>
+            </li>
+          </ul>
           <i>
             <FaChevronDown />
           </i>
@@ -49,9 +124,52 @@ const AiGenerateForm = () => {
       <div className={styles.input__block}>
         <label htmlFor="repeat">Repeat</label>
         <div className={styles.select__container}>
-          <select name="repeat" id="repeat">
-            <option value="">1 time/day</option>
-          </select>
+          <div className={styles.selected}>
+            <div
+              style={{
+                background: '#4ADE80',
+                width: '4px',
+                height: '4px',
+                borderRadius: '1px',
+              }}
+            ></div>
+            <p>Health</p>
+          </div>
+          <ul className={styles.dropdown}>
+            <li className={styles.dropdown__item}>
+              <div
+                style={{
+                  background: '#4ADE80',
+                  width: '4px',
+                  height: '4px',
+                  borderRadius: '1px',
+                }}
+              ></div>
+              <p>Health</p>
+            </li>
+            <li className={styles.dropdown__item}>
+              <div
+                style={{
+                  background: '#4ADE80',
+                  width: '4px',
+                  height: '4px',
+                  borderRadius: '1px',
+                }}
+              ></div>
+              <p>Health</p>
+            </li>
+            <li className={styles.dropdown__item}>
+              <div
+                style={{
+                  background: '#4ADE80',
+                  width: '4px',
+                  height: '4px',
+                  borderRadius: '1px',
+                }}
+              ></div>
+              <p>Health</p>
+            </li>
+          </ul>
           <i>
             <FaChevronDown />
           </i>

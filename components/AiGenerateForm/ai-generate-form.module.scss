@@ -19,7 +19,54 @@
 
     .select__container {
       position: relative;
-      display: inline-block;
+
+      &:hover .dropdown {
+        visibility: visible;
+      }
+
+      .selected {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #929292;
+        width: 123px;
+        border: solid 1px $primaryColor-200; // Change color to red for debugging
+        padding: 10px 40px 10px 10px;
+        border-radius: 8px;
+        font-size: 1.4rem;
+        font-weight: 300;
+        cursor: pointer;
+        position: relative;
+      }
+
+      .dropdown {
+        visibility: hidden;
+        transition: visibility 0.3s ease-in;
+        box-shadow: 0px 0px 11px 3px #0000004d;
+        z-index: 2;
+        position: absolute;
+        top: 40px;
+
+        left: 0;
+        right: 0;
+        background: #262525;
+
+        border-radius: 4px;
+        overflow: hidden;
+
+        &__item {
+          padding: 10px;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          cursor: pointer;
+
+          &:hover {
+            background: #6060604d;
+          }
+        }
+      }
+
       select {
         appearance: none; /* Remove default dropdown arrow */
         -webkit-appearance: none;
